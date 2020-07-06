@@ -4,12 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BrillMeet</title>
-    <link rel="stylesheet" rel="stylesheet" 
-    href="css/main.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"/>
+    <link rel="stylesheet" rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+    />
   </head>
   <body>
-      
+    <button class="hamburger">
+      <div class="nav-mobile">
+        <ul class="nav-mobile-list">
+          <li class="nav-mobile-item"><a>Products</a></li>
+          <li class="nav-mobile-item"><a>Resources</a></li>
+          <li class="nav-mobile-item"><a>Get a Demo</a></li>
+          <li class="nav-mobile-item"><a>Contact</a></li>
+        </ul>
+      </div>
+      <span class="hamburger-box">
+        <span class="hamburger-inner hamburger-active"></span>
+      </span>
+    </button>
     <nav>
       <div class="logo-section">
         <div class="logo">
@@ -17,23 +30,25 @@
           <p>Conference<b>calling</b></p>
         </div>
         <div class="tel-logo-section">
-            <img class="tel-logo-call-img" src="img/call-icon.svg"/>
-            <a class="tel-logo-section-number" href="tel:+48713333222">+48-713-333-222</a>
+          <img class="tel-logo-call-img" src="img/call-icon.svg" />
+          <a class="tel-logo-section-number" href="tel:+48713333222"
+            >+48-713-333-222</a
+          >
         </div>
         
       </div>
       <div class="nav-items">
         <div class="nav-items-list">
-            <ul class="nav-items-list-item">
-                <li>Products</li>
-                <li>Resources</li>
-                <li>Get a Demo</li>
-                <li>Contact</li>
-             </ul> 
+          <ul class="nav-items-list-item">
+            <li>Products</li>
+            <li>Resources</li>
+            <li>Get a Demo</li>
+            <li>Contact</li>
+          </ul>
         </div>
         <div class="login">
-            <a>Log in</a>
-            <button>Pricing & Free Trial</button>
+          <a>Log in</a>
+          <button>Pricing & Free Trial</button>
         </div>
       </div>
     </nav>
@@ -125,5 +140,6 @@
       </div>
     </section>
     <footer></footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
