@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white; }
+  body nav {
+    position: fixed; }
+    body nav .logo-section .logo {
+      display: flex; }
+      body nav .logo-section .logo .menu-logo-img {
+        width: 25px;
+        background-color: white; }
+  body header {
+    width: 1200px;
+    height: 1200px;
+    background: linear-gradient(slateblue, #aea3f3);
+    margin-left: auto;
+    margin-right: auto; }
+
+/* @media (min-width: 576px) { } */
+/* @media (min-width: 768px) { } */
+/* @media (min-width: 992px) { } */
+/* @media (min-width: 1200px) { } */
