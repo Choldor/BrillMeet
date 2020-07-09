@@ -92,11 +92,21 @@ header {
     width: 100%;
     margin-top: 75px; }
     header .banner-left h1 {
+      position: relative;
       margin: 0;
       text-align: left; }
+      header .banner-left h1::before {
+        content: "";
+        position: absolute;
+        background-color: #fff6ff;
+        width: 20%;
+        height: 3px;
+        top: -10px;
+        left: 0px; }
     header .banner-left p {
       margin: 0;
-      text-align: left; }
+      text-align: left;
+      max-width: 300px; }
     header .banner-left button {
       cursor: pointer;
       outline: none;
@@ -218,24 +228,145 @@ header {
     margin-top: 20px;
     margin-bottom: 40px; }
   .conference-calls .conference-calls-pictures img {
-    max-width: 400px; }
+    max-width: 400px;
+    padding: 20px; }
   .conference-calls .conference-calls-items {
     display: flex;
     flex-direction: column; }
     .conference-calls .conference-calls-items .conference-calls-items-left {
-      display: flex; }
+      display: flex;
+      padding: 20px; }
       .conference-calls .conference-calls-items .conference-calls-items-left p {
         margin: 1;
         padding: 0; }
       .conference-calls .conference-calls-items .conference-calls-items-left img {
         width: 70px; }
     .conference-calls .conference-calls-items .conference-calls-items-right {
-      display: flex; }
+      display: flex;
+      padding: 20px; }
       .conference-calls .conference-calls-items .conference-calls-items-right p {
         margin: 1;
         padding: 0; }
       .conference-calls .conference-calls-items .conference-calls-items-right img {
         width: 70px; }
+
+.advertisement {
+  margin-top: 20px;
+  color: black; }
+  .advertisement .advertisement-items {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #eaeaea; }
+    .advertisement .advertisement-items .advertisement-buttons {
+      display: flex;
+      padding: 10px;
+      margin: 10px; }
+      .advertisement .advertisement-items .advertisement-buttons button {
+        cursor: pointer;
+        outline: none;
+        text-decoration: none;
+        background-color: #6d61b0;
+        color: #fff;
+        border: none;
+        text-align: center;
+        display: inline-block;
+        font-size: 15px;
+        border-radius: 30px;
+        padding: 20px 40px 20px 40px;
+        margin: 20px 0px 40px 10px; }
+        .advertisement .advertisement-items .advertisement-buttons button:last-of-type {
+          color: #8c83b7;
+          background-color: #f0ebff;
+          padding: 20px 40px 20px 40px; }
+
+footer {
+  margin-top: 20px;
+  color: #81858a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  footer .footer-items-info {
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  footer .footer-item-more-help .footer-item-more-on-products {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; }
+    footer .footer-item-more-help .footer-item-more-on-products ul {
+      padding: 0;
+      margin: 0; }
+      footer .footer-item-more-help .footer-item-more-on-products ul li {
+        text-decoration: none;
+        list-style: none; }
+  footer .footer-item-more-help .footer-item-help-and-support {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; }
+    footer .footer-item-more-help .footer-item-help-and-support ul {
+      padding: 0;
+      margin: 0; }
+      footer .footer-item-more-help .footer-item-help-and-support ul li {
+        text-decoration: none;
+        list-style: none; }
+  footer .footer-item-features {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; }
+    footer .footer-item-features ul {
+      padding: 0;
+      margin: 0; }
+      footer .footer-item-features ul li {
+        text-decoration: none;
+        list-style: none; }
+  footer .footer-item-company-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; }
+    footer .footer-item-company-contact .footer-item-company ul {
+      padding: 0;
+      margin: 0; }
+      footer .footer-item-company-contact .footer-item-company ul li {
+        text-decoration: none;
+        list-style: none; }
+  footer .footer-item-contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; }
+    footer .footer-item-contact-us p {
+      padding: 0;
+      margin: 0; }
+    footer .footer-item-contact-us a {
+      color: #81858a;
+      text-decoration: none;
+      list-style: none;
+      cursor: pointer; }
+  footer .footer-item-copyright-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; }
+    footer .footer-item-copyright-media ul {
+      padding: 0;
+      margin: 0; }
+      footer .footer-item-copyright-media ul li {
+        text-decoration: none;
+        list-style: none; }
+    footer .footer-item-copyright-media .footer-item-media {
+      align-items: center;
+      width: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center; }
 
 @media (min-width: 992px) {
   nav {
@@ -295,15 +426,21 @@ header {
       width: 50%;
       align-content: flex-end; }
       header .banner-left h1 {
-        width: 400px;
+        max-width: 400px;
         height: auto;
         font-size: 100px;
         margin: 0;
         line-height: 1;
         margin-bottom: 30px; }
+        header .banner-left h1::before {
+          width: 20%;
+          height: 3px;
+          top: -30px;
+          left: 0px; }
       header .banner-left p {
         margin: 15px;
-        font-size: 21.5px; }
+        font-size: 21.5px;
+        max-width: 200px; }
       header .banner-left button {
         margin-right: 20px; }
     header .banner-right {
@@ -320,25 +457,106 @@ header {
       font-size: 50px; }
     .conference-calls p {
       font-size: 20px;
-      padding: 0px 600px 0px 600px; }
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 10px; }
     .conference-calls .conference-calls-pictures img {
-      max-width: 1200px; }
-  .conference-calls-items {
+      max-width: 100%; }
+    .conference-calls .conference-calls-items {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start; }
+      .conference-calls .conference-calls-items .conference-calls-items-left p {
+        padding: 10px;
+        margin: 5px;
+        font-size: 23px;
+        max-width: 300px;
+        text-align: left; }
+      .conference-calls .conference-calls-items .conference-calls-items-left img {
+        width: 150px; }
+      .conference-calls .conference-calls-items .conference-calls-items-right p {
+        padding: 10px;
+        margin: 5px;
+        font-size: 23px;
+        max-width: 300px; }
+      .conference-calls .conference-calls-items .conference-calls-items-right img {
+        width: 150px; }
+  .advertisement .advertisement-items {
     display: flex;
-    flex-direction: row; }
-    .conference-calls-items .conference-calls-items-left {
-      display: flex;
-      flex-direction: row; }
-      .conference-calls-items .conference-calls-items-left p {
-        margin: 1;
-        padding: 0; }
-      .conference-calls-items .conference-calls-items-left img {
-        width: 70px; }
-    .conference-calls-items .conference-calls-items-right {
-      display: flex;
-      flex-direction: row; }
-      .conference-calls-items .conference-calls-items-right p {
-        margin: 1;
-        padding: 0; }
-      .conference-calls-items .conference-calls-items-right img {
-        width: 70px; } }
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center; }
+    .advertisement .advertisement-items h1 {
+      max-width: 500px;
+      text-align: left;
+      padding: 10px;
+      font-size: 40px;
+      color: #40484f; }
+  footer {
+    display: flex; }
+    footer .footer-main {
+      width: 100%; }
+      footer .footer-main .footer-items {
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        align-items: flex-start; }
+        footer .footer-main .footer-items .footer-items-info {
+          margin-top: 21px;
+          display: flex;
+          text-align: left;
+          flex-direction: column;
+          align-items: flex-start; }
+          footer .footer-main .footer-items .footer-items-info img {
+            margin: 20px; }
+          footer .footer-main .footer-items .footer-items-info p {
+            margin: 10px;
+            max-width: 170px; }
+      footer .footer-main .footer-item-more-help .footer-item-more-on-products h1 {
+        margin: 5px;
+        font-size: 20px; }
+      footer .footer-main .footer-item-more-help .footer-item-more-on-products ul li {
+        padding: 7px; }
+      footer .footer-main .footer-item-help-and-support h1 {
+        margin: 30px 5px 5px 5px;
+        font-size: 20px; }
+      footer .footer-main .footer-item-help-and-support ul li {
+        padding: 7px; }
+      footer .footer-main .footer-item-features h1 {
+        margin: 5px;
+        font-size: 20px; }
+      footer .footer-main .footer-item-features ul li {
+        padding: 7px; }
+      footer .footer-main .footer-item-company-contact .footer-item-company h1 {
+        margin: 5px;
+        font-size: 20px; }
+      footer .footer-main .footer-item-company-contact .footer-item-company ul li {
+        padding: 7px; }
+      footer .footer-main .footer-item-company-contact .footer-item-contact-us h1 {
+        margin: 30px 5px 5px 5px;
+        font-size: 20px; }
+      footer .footer-main .footer-item-company-contact .footer-item-contact-us p {
+        padding: 7px; }
+      footer .footer-main .footer-item-company-contact .footer-item-contact-us a {
+        padding: 7px; }
+      footer .footer-main .footer-item-copyright-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 50px;
+        align-items: center; }
+        footer .footer-main .footer-item-copyright-media p {
+          padding: 10px;
+          max-width: 190px; }
+        footer .footer-main .footer-item-copyright-media ul {
+          display: flex; }
+          footer .footer-main .footer-item-copyright-media ul li {
+            padding: 10px;
+            margin: 10px; }
+      footer .footer-main .footer-item-media {
+        width: 300px; }
+        footer .footer-main .footer-item-media img {
+          margin: 10px; } }
