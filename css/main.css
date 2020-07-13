@@ -251,8 +251,8 @@ header {
         width: 70px; }
 
 .testimonials .testimonials-container {
-  color: red;
-  background-color: green; }
+  color: black;
+  background-color: #fff; }
   .testimonials .testimonials-container .testimonials-opinion-container .testimonials-opinion-container-left .checked {
     color: orange; }
 
