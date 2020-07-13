@@ -287,6 +287,19 @@ header {
     }
   }
 }
+.testimonials {
+  .testimonials-container {
+    color: red;
+    background-color: green;
+    .testimonials-opinion-container {
+      .testimonials-opinion-container-left {
+        .checked {
+          color: orange;
+        }
+      }
+    }
+  }
+}
 .blog {
   background: linear-gradient(#524496, #6d5dc0, #a89ce6);
   .blog-container {
@@ -749,6 +762,7 @@ footer {
       }
     }
   }
+  
   .blog {
     padding: 100px;
     .blog-container {
@@ -821,22 +835,21 @@ footer {
           flex-direction: column;
           text-align: end;
         }
+      }
+      .blog-right-down-text {
+        max-width: 1140px;
+        width: 100%;
+        align-items: flex-end;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        h2 {
+          max-width: 260px;
         }
-        .blog-right-down-text {
-          max-width: 1140px;
-          width: 100%;
-          align-items: flex-end;
-          margin: 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          align-items: center;
-          h2 {
-            max-width: 260px;
-          }
-          p {
-            max-width: 260px;
-          }
+        p {
+          max-width: 260px;
+        }
       }
     }
   }
