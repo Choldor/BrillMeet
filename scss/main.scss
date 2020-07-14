@@ -15,6 +15,8 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 99;
+  transition: 0.3s;
 
   .logo-section {
     margin-left: 30px;
@@ -45,15 +47,22 @@ nav {
       }
     }
   }
+  .logo-section-mobile {
+width: 100%;
+margin-left: 0;
+background-color: #524496;
+  }
   .nav-items {
     height: calc(100vh - 62px);
     background: linear-gradient(slateblue, rgb(174, 163, 243));
     width: 100vw;
-    display: none;
+    display: flex;
     flex-direction: column;
     padding: 10px;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
+    transform: translateX(-385px);
     ul {
       list-style: none;
       padding: 0;
@@ -86,11 +95,11 @@ nav {
     }
   }
   .nav-items-active {
-    display: flex;
+    transform: translateX(0px);
   }
 }
 .nav-background {
-  background-color: red;
+  background-color: transparent;
 }
 header {
   width: 100vw;
@@ -253,8 +262,9 @@ header {
     text-align: center;
     display: inline-block;
     font-size: 15px;
+    font-weight: bold;
     border-radius: 30px;
-    padding: 20px 40px 20px 40px;
+    padding: 20px 60px 20px 60px;
     margin-top: 20px;
     margin-bottom: 40px;
   }
@@ -290,6 +300,27 @@ header {
       }
     }
   }
+}
+.products-features {
+  color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    .products-features-container {
+      .products-features-items {
+        position: relative;
+      }
+    }
+}
+  
+.slide {
+  width: 250px;
+  height: 350px;
+}
+.back {
+  width: 15px;
+  height: 15px;
 }
 .businesses-solution {
   padding: 20px;
@@ -571,13 +602,14 @@ header {
         text-align: center;
         display: inline-block;
         font-size: 15px;
+        font-weight: bold;
         border-radius: 30px;
-        padding: 20px 40px 20px 40px;
+        padding: 20px 50px 20px 50px;
         margin: 20px 0px 40px 10px;
         &:last-of-type {
           color: #8c83b7;
           background-color: #f0ebff;
-          padding: 20px 40px 20px 40px;
+          padding: 20px 50px 20px 50px;
         }
       }
     }
@@ -725,7 +757,7 @@ footer {
       display: none;
     }
     .logo-section {
-      margin-top: 25px;
+      margin-top: 0px;
       .logo {
         padding: 0px 40px 0px 0px;
 
@@ -757,7 +789,6 @@ footer {
       flex-direction: row;
       background: none;
       display: flex;
-      margin-top: 20px;
       margin-right: 50px;
       ul {
         flex-direction: row;
@@ -841,8 +872,19 @@ footer {
   }
   .conference-calls {
     display: flex;
+    margin-top: 140px;
     h2 {
+      position: relative;
       font-size: 50px;
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: black;
+        width: 11%;
+        height: 2px;
+        top: -20px;
+        left: 210px;
+      }
     }
     p {
       font-size: 20px;
@@ -857,6 +899,8 @@ footer {
       max-width: 1140px;
       align-items: center;
       flex-direction: column;
+      border-bottom: 1px solid #eaeaeb;
+      padding: 40px 0px 40px 0px;
       img {
         padding: 0;
         max-width: 100%;
@@ -875,8 +919,9 @@ footer {
         p {
           padding: 10px;
           margin: 5px;
-          font-size: 23px;
-          max-width: 300px;
+          font-size: 20px;
+          font-weight: 600;
+          max-width: 250px;
           text-align: left;
         }
         img {
@@ -888,11 +933,32 @@ footer {
         p {
           padding: 10px;
           margin: 5px;
-          font-size: 23px;
-          max-width: 300px;
+          font-size: 20px;
+          font-weight: 600;
+          max-width: 250px;
         }
         img {
           width: 120px;
+        }
+      }
+    }
+  }
+  .products-features {
+    color: black;
+    
+    .products-features-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 40px 0px 40px 0px;
+      .products-features-items {
+        display: flex;
+        align-items: flex-start;
+        h1 {
+          font-size: 50px;
+          max-width: 480px;
+          text-align: left;
+          line-height: 1;
+          padding: 10px;
         }
       }
     }
@@ -906,6 +972,7 @@ footer {
       align-items: flex-end;
       justify-content: center;
       margin: 0 auto;
+      margin-top: 100px;
       .businesses-solution-pictures {
         width: 50%;
         img {
@@ -1032,7 +1099,7 @@ footer {
         }
         .testimonials-items-info {
           font-size: 20px;
-          max-width: 250px;
+          max-width: 300px;
           margin-right: 60px;
         }
       }
@@ -1236,7 +1303,7 @@ footer {
       .footer-item-copyright-media {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-top: 50px;
         align-items: center;
         p {
