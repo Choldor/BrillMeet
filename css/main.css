@@ -23,9 +23,10 @@ nav {
     align-items: center; }
     nav .logo-section .logo {
       font-size: 15px;
-      padding: 10px;
+      padding: 0px 20px 0px 0px;
       border-right: 1px solid #ffffff52;
-      display: flex; }
+      display: flex;
+      margin: 10px 10px 10px 10px; }
       nav .logo-section .logo .menu-logo-img {
         margin-right: 5px;
         width: 20px; }
@@ -86,7 +87,7 @@ nav {
     transform: translateX(0px); }
 
 header {
-  width: 100vw;
+  max-width: 100%;
   height: 100vh;
   background: linear-gradient(#524496, #6d5dc0, #a89ce6);
   margin-left: auto;
@@ -101,7 +102,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 75px; }
+    margin-top: 130px; }
     header .banner-left h1 {
       position: relative;
       margin: 0;
@@ -175,7 +176,7 @@ header {
   background: #fff;
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 70%;
   transform: translateY(-50%);
   transition: background-color 0.1s 0.2s ease-in-out; }
   .hamburger-inner::before {
@@ -249,17 +250,19 @@ header {
       display: flex;
       padding: 20px; }
       .conference-calls .conference-calls-items .conference-calls-items-left p {
-        margin: 1;
-        padding: 0; }
+        margin: 1px;
+        padding: 10px; }
       .conference-calls .conference-calls-items .conference-calls-items-left img {
+        padding: 0;
         width: 70px; }
     .conference-calls .conference-calls-items .conference-calls-items-right {
       display: flex;
       padding: 20px; }
       .conference-calls .conference-calls-items .conference-calls-items-right p {
-        margin: 1;
-        padding: 0; }
+        margin: 1px;
+        padding: 5px; }
       .conference-calls .conference-calls-items .conference-calls-items-right img {
+        padding: 0;
         width: 70px; }
 
 .products-features {
@@ -270,6 +273,9 @@ header {
   padding: 20px; }
   .products-features .products-features-container .products-features-items {
     position: relative; }
+
+.glide__arrows {
+  display: none; }
 
 .slide {
   width: 250px;
@@ -752,6 +758,28 @@ footer {
           text-align: left;
           line-height: 1;
           padding: 10px; }
+  .glide__arrows {
+    display: flex;
+    position: absolute;
+    top: -100px;
+    right: 170px; }
+    .glide__arrows .glide__arrow {
+      background: transparent;
+      color: transparent;
+      border: none;
+      border-radius: 0px;
+      box-shadow: none;
+      text-shadow: none;
+      padding: 10px 10px 10px 30px;
+      position: static; }
+      .glide__arrows .glide__arrow img {
+        width: 15px; }
+      .glide__arrows .glide__arrow .arrow-left {
+        transform: scaleX(-1); }
+    .glide__arrows .glide__arrow--left {
+      border-left: 1px solid #d6d6d6; }
+    .glide__arrows .glide__arrow--right {
+      padding: 10px 30px 10px 10px; }
   .businesses-solution .businesses-solution-container {
     display: flex;
     max-width: 1140px;

@@ -37,13 +37,13 @@ window.addEventListener('scroll', function() {
        gap: 10,
      }).mount()
    
-     const Jebanastala = () => {
-if (window.innerWidth > 992)
-logoSection.classList.remove('logo-section-mobile')
-else {
-   logoSection.classList.add('logo-section-mobile')
 
-}
-     }
-     window.addEventListener('scroll', Jebanastala)
-   
+   const mobileNavChange = () => {
+      if (window.scrollY > 100 && window.innerWidth < 992){
+         logoSection.classList.add('logo-section-mobile')
+      }
+      else{
+         logoSection.classList.remove('logo-section-mobile')
+      }
+   }
+   window.addEventListener('scroll', mobileNavChange)
