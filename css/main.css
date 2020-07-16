@@ -318,15 +318,15 @@ header {
           background-color: #fff;
           padding: 20px 40px 20px 40px;
           margin: 20px 0px 40px 0px; }
-    .businesses-solution .businesses-solution-container .businesses-solution-itmes .businesses-solution-itmes-rates {
+    .businesses-solution .businesses-solution-container .businesses-solution-itmes .businesses-solution-items-rates {
       display: flex;
       margin: 20px 10px 20px 10px;
       padding: 10px 0px 10px 0px; }
-      .businesses-solution .businesses-solution-container .businesses-solution-itmes .businesses-solution-itmes-rates p {
+      .businesses-solution .businesses-solution-container .businesses-solution-itmes .businesses-solution-items-rates p {
         font-size: 20px;
         padding: 0px 0px 0px 10px;
         margin: 0px; }
-        .businesses-solution .businesses-solution-container .businesses-solution-itmes .businesses-solution-itmes-rates p a {
+        .businesses-solution .businesses-solution-container .businesses-solution-itmes .businesses-solution-items-rates p a {
           font-weight: bold; }
 
 .testimonials {
@@ -593,6 +593,10 @@ footer {
       display: flex;
       text-align: center;
       justify-content: center; }
+
+.star {
+  font-size: 100%;
+  color: orange; }
 
 @media (min-width: 992px) {
   nav {

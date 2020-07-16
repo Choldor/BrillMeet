@@ -375,7 +375,7 @@ header {
           }
         }
       }
-      .businesses-solution-itmes-rates {
+      .businesses-solution-items-rates {
         display: flex;
         margin: 20px 10px 20px 10px;
         padding: 10px 0px 10px 0px;
@@ -755,6 +755,10 @@ footer {
       justify-content: center;
     }
   }
+}
+.star {
+  font-size: 100%;
+  color: orange;
 }
 // @media (min-width: 576px) {
 // }
